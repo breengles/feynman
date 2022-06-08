@@ -1,7 +1,7 @@
+__all__ = ["Drawable"]
 
-__all__ = ['Drawable']
 
-class Drawable(object):
+class Drawable:
     """
     A drawable object that belongs to a certain diagram.
     """
@@ -12,7 +12,7 @@ class Drawable(object):
     def diagram(self):
         """The diagram it belongs to."""
         if not self._diagram:
-            raise Exception('Diagram not found.')
+            raise Exception("Diagram not found.")
         return self._diagram
 
     @diagram.setter
